@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import CartWidget from "./cartwidget/CartWidget";
 
 function NavBar() {
   return (
@@ -21,7 +22,7 @@ function NavBar() {
               <NavDropdown.Item href="#action/3.3">Accesorios</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Carrito
+                <CartWidget/>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
