@@ -4,9 +4,20 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from "./cartwidget/CartWidget";
 
-function NavBar() {
+function NavBar() {   
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="secondary" expand="lg">
+      <Container>
+          <Navbar.Brand href="#home">
+            <img
+              src="logoCeramicos.png"
+              width="50"
+              height="50"
+              className="d-inline-block align-top"
+              alt="ceramicos logo"
+            />
+          </Navbar.Brand>
+        </Container>
       <Container>
         <Navbar.Brand href="#home">Ceramicos MZA</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
